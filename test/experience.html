@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Hussnain Naeem Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .content-section {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .experience-item {
+            background: white;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+            transition: all 0.3s ease;
+        }
+        .experience-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+        }
+        .experience-item h3 {
+            margin-top: 0;
+            color: #0f172a;
+        }
+        .experience-item .role {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        body.dark-mode .experience-item {
+            background: #1e293b;
+            border-left-color: #3b82f6;
+        }
+        body.dark-mode .experience-item h3 {
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">HN Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#introduction">Introduction</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#education">Education</a></li>
+                <li><button class="dark-mode-toggle" id="darkModeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>My Experience</h1>
+        <p>Journey and professional growth</p>
+    </header>
+
+    <main class="content-section">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+        <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="../test/projects.html" role="button" aria-label="View all projects">View All Projects <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="../education.html" role="button" aria-label="View education details">View Education <span aria-hidden="true">→</span></a>
+        </div>
+        
+        <section>
+            <h2>Overview</h2>
+            <p>As a Computer Science student, I am continuously gaining practical experience through academic projects and self-learning. I have worked on programming assignments and personal projects that have helped me develop strong technical skills.</p>
+        </section>
+
+        <section>
+            <h2>Experience Timeline</h2>
+
+            <div class="experience-item">
+                <h3>Academic Projects</h3>
+                <span class="role">Programming & Development</span>
+                <p>I have worked on numerous programming assignments using C++, focusing on Programming Fundamentals, Object-Oriented Programming (OOP), and Data Structures and Algorithms (DSA). These projects have strengthened my problem-solving abilities and coding practices.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Web Development Learning</h3>
+                <span class="role">Front-End Development</span>
+                <p>I am developing my front-end web development skills by learning HTML, CSS, and JavaScript. I have built responsive websites and personal projects, applying best practices in user interface design and user experience.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>React Web Development</h3>
+                <span class="role">Frontend & UI Development</span>
+                <p>I built a web application using HTML, CSS, JavaScript, and React to create a modern, interactive interface. This experience helped me strengthen my component-based thinking and front-end development workflow.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Self-Learning & Development</h3>
+                <span class="role">Continuous Improvement</span>
+                <p>I am eager to apply my knowledge to real-world projects and continue growing as a software developer. I constantly explore new technologies and frameworks to expand my skill set and stay updated with industry trends.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Achievements</h2>
+            <ul style="line-height: 1.8;">
+                <li>Developed multiple C++ console applications with OOP principles</li>
+                <li>Created responsive websites using HTML, CSS, and JavaScript</li>
+                <li>Implemented data structures and algorithms in programming projects</li>
+                <li>Built portfolio website demonstrating web development skills</li>
+                <li>Maintained strong academic performance throughout studies</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Contact Info</h4>
+        <p>Email: <a href="mailto:hussnain@example.com">hussnain@example.com</a></p>
+        <p>Phone: <a href="tel:+923214051527">+92 321 4051527</a></p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        const feedback = document.createElement('div');
+        feedback.id = 'page-feedback';
+        feedback.setAttribute('role', 'status');
+        feedback.style.cssText = 'position:fixed;top:20px;right:20px;z-index:1200;padding:10px 14px;border-radius:999px;background:#0f172a;color:#fff;box-shadow:0 10px 24px rgba(15,23,42,0.2);opacity:0;transform:translateY(-6px);transition:all 0.25s ease;pointer-events:none;';
+        document.body.appendChild(feedback);
+
+        function showFeedback(message) {
+            feedback.textContent = message;
+            feedback.style.opacity = '1';
+            feedback.style.transform = 'translateY(0)';
+            clearTimeout(showFeedback.timeout);
+            showFeedback.timeout = setTimeout(() => {
+                feedback.style.opacity = '0';
+                feedback.style.transform = 'translateY(-6px)';
+            }, 1800);
+        }
+
+        function navigateWithFeedback(link, message) {
+            link.addEventListener('click', function (event) {
+                const href = this.getAttribute('href');
+                if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('http')) {
+                    return;
+                }
+
+                event.preventDefault();
+                showFeedback(message);
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 220);
+            });
+        }
+
+        function initExperiencePage() {
+            document.querySelectorAll('.btn, .back-link').forEach((link) => {
+                const text = link.textContent.trim();
+                let message = 'Opening page...';
+                if (text.includes('Projects')) {
+                    message = 'Opening the projects page...';
+                } else if (text.includes('Education')) {
+                    message = 'Opening the education page...';
+                } else if (text.includes('Home')) {
+                    message = 'Returning to the home page...';
+                }
+                navigateWithFeedback(link, message);
+            });
+        }
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            htmlElement.classList.add('dark-mode');
+            document.body.classList.add('dark-mode');
+            document.querySelector('nav').classList.add('dark-mode');
+            darkModeToggle.textContent = '☀️';
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark-mode');
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('nav').classList.toggle('dark-mode');
+            
+            if (htmlElement.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.textContent = '🌙';
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        initExperiencePage();
+    </script>
+</body>
+</html>

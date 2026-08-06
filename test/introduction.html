@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Introduction - Hussnain Naeem Portfolio</title>
+   <link rel="stylesheet" href="../style.css">
+   <style>
+       .content-section {
+           max-width: 960px;
+           margin: 0 auto;
+           padding: 24px;
+       }
+       .back-link {
+           display: inline-block;
+           margin-bottom: 20px;
+           color: #2563eb;
+           text-decoration: none;
+           font-weight: 600;
+       }
+       .back-link:hover {
+           text-decoration: underline;
+       }
+   </style>
+</head>
+<body>
+   <nav>
+       <div class="nav-container">
+           <a href="../index.html" class="nav-logo">HN Portfolio</a>
+           <ul class="nav-links">
+               <li><a href="../index.html#introduction">Introduction</a></li>
+               <li><a href="../index.html#experience">Experience</a></li>
+               <li><a href="../index.html#projects">Projects</a></li>
+               <li><a href="../index.html#education">Education</a></li>
+               <li><button class="dark-mode-toggle" id="darkModeToggle">🌙</button></li>
+           </ul>
+       </div>
+   </nav>
+
+   <header>
+       <h1>Introduction</h1>
+       <p>Get to know me better</p>
+   </header>
+
+   <main class="content-section">
+       <a href="../index.html" class="back-link">← Back to Home</a>
+        
+       <img class="profile-image" src="https://i.ebayimg.com/images/g/AOAAAOSwtOVlEkiy/s-l1600.webp" alt="Hussnain Naeem" height="200">
+
+       <section>
+           <h2>About Me</h2>
+           <p>My name is Hussnain Naeem. I am a passionate Computer Science student currently in my fifth semester at the University of Central Punjab. I have a strong interest in web development and programming, and I'm constantly learning and improving my skills.</p>
+       </section>
+
+       <section>
+           <h2>My Qualifications</h2>
+           <p>I am currently pursuing a <strong>Bachelor of Science in Computer Science (BSCS)</strong> and am in my <strong>5th semester</strong>. Throughout my studies, I have built a strong foundation in programming through courses such as:</p>
+           <ul>
+               <li>Programming Fundamentals</li>
+               <li>Object-Oriented Programming (OOP) using C++</li>
+               <li>Data Structures and Algorithms (DSA)</li>
+           </ul>
+           <p>Alongside my academic coursework, I am continuously expanding my skills in HTML, CSS, and JavaScript to become a proficient front-end web developer. I am passionate about learning new technologies and applying my knowledge to create efficient, user-friendly, and responsive web applications.</p>
+       </section>
+
+       <section>
+           <h2>Skills & Interests</h2>
+           <div class="skills-grid">
+               <div class="skill-badge">C++</div>
+               <div class="skill-badge">HTML/CSS</div>
+               <div class="skill-badge">JavaScript</div>
+               <div class="skill-badge">Data Structures</div>
+               <div class="skill-badge">Web Design</div>
+               <div class="skill-badge">Problem Solving</div>
+           </div>
+       </section>
+   </main>
+
+   <footer>
+       <h4>Contact Info</h4>
+       <p>Email: <a href="mailto:hussnain@example.com">hussnain@example.com</a></p>
+       <p>Phone: <a href="tel:+923214051527">+92 321 4051527</a></p>
+   </footer>
+
+   <script>
+       const darkModeToggle = document.getElementById('darkModeToggle');
+       const htmlElement = document.documentElement;
+       const feedback = document.createElement('div');
+       feedback.id = 'page-feedback';
+       feedback.setAttribute('role', 'status');
+       feedback.style.cssText = 'position:fixed;top:20px;right:20px;z-index:1200;padding:10px 14px;border-radius:999px;background:#0f172a;color:#fff;box-shadow:0 10px 24px rgba(15,23,42,0.2);opacity:0;transform:translateY(-6px);transition:all 0.25s ease;pointer-events:none;';
+       document.body.appendChild(feedback);
+
+       function showFeedback(message) {
+           feedback.textContent = message;
+           feedback.style.opacity = '1';
+           feedback.style.transform = 'translateY(0)';
+           clearTimeout(showFeedback.timeout);
+           showFeedback.timeout = setTimeout(() => {
+               feedback.style.opacity = '0';
+               feedback.style.transform = 'translateY(-6px)';
+           }, 1800);
+       }
+
+       function navigateWithFeedback(link, message) {
+           link.addEventListener('click', function (event) {
+               const href = this.getAttribute('href');
+               if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('http')) {
+                   return;
+               }
+
+               event.preventDefault();
+               showFeedback(message);
+               setTimeout(() => {
+                   window.location.href = href;
+               }, 220);
+           });
+       }
+
+       function initIntroductionPage() {
+           const backLink = document.querySelector('.back-link');
+           if (backLink) {
+               navigateWithFeedback(backLink, 'Returning to the home page...');
+           }
+       }
+
+       if (localStorage.getItem('darkMode') === 'enabled') {
+           htmlElement.classList.add('dark-mode');
+           document.body.classList.add('dark-mode');
+           document.querySelector('nav').classList.add('dark-mode');
+           darkModeToggle.textContent = '☀️';
+       }
+
+       darkModeToggle.addEventListener('click', () => {
+           htmlElement.classList.toggle('dark-mode');
+           document.body.classList.toggle('dark-mode');
+           document.querySelector('nav').classList.toggle('dark-mode');
+            
+           if (htmlElement.classList.contains('dark-mode')) {
+               localStorage.setItem('darkMode', 'enabled');
+               darkModeToggle.textContent = '☀️';
+           } else {
+               localStorage.setItem('darkMode', 'disabled');
+               darkModeToggle.textContent = '🌙';
+           }
+       });
+
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               const href = this.getAttribute('href');
+               if (href !== '#') {
+                   e.preventDefault();
+                   const target = document.querySelector(href);
+                   if (target) {
+                       target.scrollIntoView({ behavior: 'smooth' });
+                   }
+               }
+           });
+       });
+
+       initIntroductionPage();
+   </script>
+</body>
+</html>
