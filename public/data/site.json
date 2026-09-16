@@ -1,0 +1,34 @@
+{
+  "name": "Hussnain Naeem",
+  "role": "Full Stack Developer",
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Work", "href": "#work" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "socials": {
+    "github": "https://github.com/hussnain-codex",
+    "linkedin": "#",
+    "email": "hussnain@example.com",
+    "whatsapp": "https://wa.me/923214051527"
+  },
+  "journey": {
+    "degree": "BSCS",
+    "school": "University of Central Punjab",
+    "description": "Computer Science education paired with hands-on, practical software development — building real projects alongside coursework rather than studying in isolation.",
+    "summary": "A progression from programming fundamentals to building complete, full-stack products — each step adding a layer to how I design and ship software.",
+    "path": [
+      { "label": "Programming Fundamentals" },
+      { "label": "C++" },
+      { "label": "Data Structures & Algorithms" },
+      { "label": "Web Development" },
+      { "label": "React" },
+      { "label": "Backend Development" },
+      { "label": "Databases" },
+      { "label": "Full Stack Development", "current": true },
+      { "label": "Cloud & AI" }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Demo — Hussnain Naeem</title>
+    <style>
+        body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; background: #f5f4ef; color: #14130f; }
+        a.back { display: inline-block; margin-bottom: 24px; color: #b8894c; font-weight: 600; text-decoration: none; }
+        h1 { font-size: 1.6rem; }
+        .actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+        button { border: 1px solid rgba(20,19,15,0.2); background: #fff; padding: 10px 16px; border-radius: 999px; cursor: pointer; font: inherit; }
+        button:hover { border-color: #14130f; }
+        .card { background: #fff; border: 1px solid rgba(20,19,15,0.12); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; }
+        .pill { display: inline-block; background: #14130f; color: #f5f4ef; padding: 6px 12px; border-radius: 999px; font-size: 0.85rem; margin: 4px 6px 0 0; }
+        #messageBox { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <a class="back" href="/">← Back to Portfolio</a>
+    <h1>Interactive JavaScript Demo</h1>
+    <p>A small vanilla-JS demo: greet, toggle a color theme, and list core strengths.</p>
+
+    <div class="actions">
+        <button id="greetBtn">Greet Me</button>
+        <button id="toggleThemeBtn">Toggle Theme</button>
+        <button id="showSkillsBtn">Show Strengths</button>
+    </div>
+
+    <div id="messageBox"></div>
+    <div id="highlights"></div>
+    <div id="skillsBox"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

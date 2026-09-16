@@ -1,0 +1,8 @@
+[
+  { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "React"] },
+  { "title": "Backend", "items": ["Node.js", "Express", "REST APIs"] },
+  { "title": "Database", "items": ["MongoDB", "Prisma", "SQL"] },
+  { "title": "Programming", "items": ["C++", "JavaScript"] },
+  { "title": "Tools & Cloud", "items": ["Git", "GitHub", "Cloudinary", "Cloud Deployment", "CI/CD"] },
+  { "title": "AI", "items": ["AI API Integration", "AI Agents", "Automation"] }
+]

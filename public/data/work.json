@@ -1,0 +1,30 @@
+{
+  "flagship": [
+    {
+      "index": "01",
+      "title": "Ahmad Cloth House",
+      "description": "A full-stack e-commerce platform designed for a modern clothing brand, including product management, authentication, shopping cart, checkout and admin functionality.",
+      "tech": ["React", "Node.js", "Express", "MongoDB", "Prisma", "Cloudinary"],
+      "features": ["Premium storefront", "Product management", "Admin dashboard", "Authentication", "Shopping cart", "Checkout", "Cloud media management", "Backend APIs"],
+      "view": "/test/projects.html",
+      "code": "https://github.com/hussnain-codex"
+    },
+    {
+      "index": "02",
+      "title": "HR Management Portal",
+      "description": "A modern employee management platform designed to manage employees, attendance, leave requests, holidays, documents and administrative workflows.",
+      "tech": ["React", "Node.js", "MongoDB", "Authentication", "Cloudinary"],
+      "features": ["Employee management", "Employee dashboard", "Attendance", "Leave requests", "Holiday management", "Admin dashboard", "Employee documents", "Role-based access"],
+      "view": "#",
+      "code": "#"
+    }
+  ],
+  "more": [
+    { "title": "Currency Converter", "desc": "A responsive currency converter with fast, accurate conversions and a clean interface.", "tags": ["React", "JavaScript"], "link": "/test/projects.html" },
+    { "title": "Interactive JavaScript Demo", "desc": "A dynamic page featuring task management, theme switching and real-time updates.", "tags": ["JavaScript", "DOM"], "link": "/demos/index.html" },
+    { "title": "Quiz App", "desc": "An interactive quiz app with multiple-choice questions, instant scoring and a polished interface.", "tags": ["JavaScript", "UI"], "link": "/test/projects.html" },
+    { "title": "To-Do List App", "desc": "A task management app that lets users add, complete and remove tasks with a clean design.", "tags": ["JavaScript", "DOM"], "link": "/test/projects.html" },
+    { "title": "Student Management System", "desc": "A console application using C++ and OOP to manage student records.", "tags": ["C++", "OOP"], "link": "/test/projects.html" },
+    { "title": "Library Management System", "desc": "A C++ system to manage book records, issuing, returns and inventory.", "tags": ["C++", "File Handling"], "link": "/test/projects.html" }
+  ]
+}

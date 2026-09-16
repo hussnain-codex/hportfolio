@@ -1,0 +1,17 @@
+{
+  "name": "hussnain-naeem-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Hussnain Naeem — Full Stack Developer portfolio (Next.js)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

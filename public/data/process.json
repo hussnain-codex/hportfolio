@@ -1,0 +1,6 @@
+[
+  { "num": "01", "title": "Understand", "desc": "Understand the business problem, users and requirements." },
+  { "num": "02", "title": "Design", "desc": "Plan the experience, architecture and technical approach." },
+  { "num": "03", "title": "Build", "desc": "Develop the frontend, backend, APIs and database systems." },
+  { "num": "04", "title": "Improve", "desc": "Test, optimize, deploy and continuously improve." }
+]

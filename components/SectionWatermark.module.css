@@ -1,0 +1,35 @@
+.mark {
+  position: absolute;
+  z-index: -1;
+  line-height: 1;
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 20vw, 16rem);
+  color: var(--color-ink);
+  opacity: 0.05;
+  letter-spacing: -0.02em;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.bottomRight {
+  bottom: -4%;
+  right: 2%;
+}
+
+.topRight {
+  top: -2%;
+  right: 2%;
+}
+
+.bottomLeft {
+  bottom: -4%;
+  left: 2%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark {
+    animation: none;
+    transition: none;
+  }
+}

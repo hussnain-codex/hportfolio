@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education — Hussnain Naeem</title>
+    <meta name="description" content="Academic background and qualifications for Hussnain Naeem, Full Stack Developer.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314130f'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23d9ad6c' text-anchor='middle'%3EHN%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { padding: calc(var(--nav-h) + 56px) 32px 40px; max-width: var(--container); margin: 0 auto; }
+        .page-header .back-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.9rem; color: var(--color-muted); margin-bottom: 24px; }
+        .page-header .back-link:hover { color: var(--color-ink); }
+        .page-header h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 12px; }
+        .page-header p { color: var(--color-muted); font-size: 1.05rem; }
+        .edu-table-wrap { max-width: var(--container); margin: 0 auto 80px; padding: 0 32px; }
+        .edu-table { width: 100%; border-collapse: collapse; border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; }
+        .edu-table thead { background: var(--color-ink); color: var(--color-bg); }
+        .edu-table th, .edu-table td { padding: 18px 22px; text-align: left; font-size: 0.95rem; }
+        .edu-table tbody tr:not(:last-child) td { border-bottom: 1px solid var(--color-border); }
+        .edu-table tbody tr:hover { background: var(--color-accent-soft); }
+        .edu-table td:first-child { font-weight: 600; }
+        @media (max-width: 720px) {
+            .page-header, .edu-table-wrap { padding-left: 20px; padding-right: 20px; }
+            .edu-table { font-size: 0.85rem; }
+            .edu-table th, .edu-table td { padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="nav" id="siteNav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Hussnain Naeem</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+                <a href="index.html#contact" class="btn btn-line nav-cta">Let's Talk <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-header">
+            <a href="index.html#journey" class="back-link">← Back to Home</a>
+            <p class="eyebrow">Education</p>
+            <h1>Academic background</h1>
+            <p>A solid foundation for creative and technical growth, built through structured study and continuous practical work.</p>
+        </div>
+
+        <div class="edu-table-wrap">
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Institute</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hussnain Naeem</td>
+                        <td>Syed School System</td>
+                        <td>980/1100</td>
+                    </tr>
+                    <tr>
+                        <td>Hussnain Naeem</td>
+                        <td>Punjab Group of Colleges</td>
+                        <td>600/1000</td>
+                    </tr>
+                    <tr>
+                        <td>Hussnain Naeem</td>
+                        <td>University of Central Punjab (BSCS)</td>
+                        <td>2.5/4.0 GPA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Hussnain Naeem</strong>
+                <span class="footer-role">Full Stack Developer</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/hussnain-codex" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="mailto:hussnain@example.com">Email</a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span id="year"></span> Hussnain Naeem. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        (function () {
+            const toggle = document.getElementById('themeToggle');
+            const root = document.documentElement;
+            const apply = (theme) => {
+                if (theme === 'dark') {
+                    root.setAttribute('data-theme', 'dark');
+                    toggle.textContent = '☀️';
+                } else {
+                    root.removeAttribute('data-theme');
+                    toggle.textContent = '🌙';
+                }
+            };
+            let stored = 'light';
+            try { stored = localStorage.getItem('theme') || 'light'; } catch (e) {}
+            apply(stored);
+            toggle.addEventListener('click', () => {
+                const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                apply(next);
+                try { localStorage.setItem('theme', next); } catch (e) {}
+            });
+        })();
+    </script>
+</body>
+</html>

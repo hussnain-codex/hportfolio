@@ -1,0 +1,9 @@
+{
+  "name": "hussnain-naeem-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hussnain Naeem — Full Stack Developer portfolio",
+  "scripts": {
+    "start": "node dev-server.js"
+  }
+}

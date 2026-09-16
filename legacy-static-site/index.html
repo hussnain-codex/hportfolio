@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussnain Naeem — Full Stack Developer</title>
+    <meta name="description" content="Hussnain Naeem is a Full Stack Developer building modern, scalable web applications and digital products.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hussnain Naeem — Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer focused on building modern, scalable and user-centered web applications.">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314130f'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23d9ad6c' text-anchor='middle'%3EHN%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="nav" id="siteNav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">Hussnain Naeem</a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Primary">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+                <a href="#contact" class="btn btn-line nav-cta">Let's Talk <span aria-hidden="true">→</span></a>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="btn btn-primary">Let's Talk <span aria-hidden="true">→</span></a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow" data-reveal="fade-up">Full Stack Developer</p>
+                    <h1 class="hero-title" data-reveal="fade-up">I build digital products that turn ideas into reality.</h1>
+                    <p class="hero-name" data-reveal="fade-up">Hussnain Naeem</p>
+                    <p class="hero-sub" data-reveal="fade-up">Full Stack Developer focused on building modern, scalable and user-centered web applications.</p>
+                    <div class="hero-actions" data-reveal="fade-up">
+                        <a href="#work" class="btn btn-primary">View My Work <span aria-hidden="true">→</span></a>
+                        <a href="#contact" class="btn btn-line">Let's Connect <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" id="heroVisual" aria-hidden="true" data-reveal="fade-in">
+                    <div class="hero-grid"></div>
+                    <div class="hero-orb"></div>
+                    <div class="hero-card hero-card-1">
+                        <span class="hero-card-label">Frontend</span>
+                        <span class="hero-card-tag">React · JS</span>
+                    </div>
+                    <div class="hero-card hero-card-2">
+                        <span class="hero-card-label">Backend</span>
+                        <span class="hero-card-tag">Node · Express</span>
+                    </div>
+                    <div class="hero-card hero-card-3">
+                        <span class="hero-card-label">Database</span>
+                        <span class="hero-card-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-cue"><span></span>Scroll</div>
+        </section>
+
+        <section class="statement">
+            <p class="statement-text" data-reveal="fade-up">I don't just write code. I build experiences, systems and products that solve real problems.</p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-head">
+                <p class="eyebrow" data-reveal="fade-up">About Me</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-lead" data-reveal="fade-up">
+                    <p>A Full Stack Developer building modern web applications from the database up.</p>
+                </div>
+                <div class="about-body" data-reveal="fade-up">
+                    <p>My name is Hussnain Naeem. I'm a Full Stack Developer and Computer Science student focused on building modern web applications and digital products — from the first pixel of an interface to the database that powers it.</p>
+                    <p>I work across the full stack: designing responsive frontends, building APIs and backend logic, structuring databases, wiring up authentication, and shipping admin dashboards that let real businesses run themselves. I'm also exploring cloud deployment and AI integrations as part of building complete, modern products.</p>
+                    <ul class="about-stack">
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>Databases</li>
+                        <li>APIs</li>
+                        <li>Authentication</li>
+                        <li>Admin dashboards</li>
+                        <li>Cloud services</li>
+                        <li>AI integrations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-head" style="max-width:1180px;margin-left:auto;margin-right:auto;">
+                <p class="eyebrow" data-reveal="fade-up">What I Do</p>
+                <h2 data-reveal="fade-up">Full-stack capability, applied end to end.</h2>
+            </div>
+            <div class="services-grid" id="servicesGrid"></div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="section-head">
+                <p class="eyebrow" data-reveal="fade-up">Selected Work</p>
+                <h2 data-reveal="fade-up">Projects where design, engineering and real-world problems come together.</h2>
+            </div>
+
+            <div class="work-list" id="workList"></div>
+
+            <div class="more-work">
+                <h3 data-reveal="fade-up">More Experiments</h3>
+                <div class="more-work-grid" id="moreWorkGrid"></div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="section-head">
+                <p class="eyebrow" data-reveal="fade-up">Skills</p>
+                <h2 data-reveal="fade-up">Technical Arsenal</h2>
+            </div>
+            <div class="skills-grid" id="skillsGrid"></div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="section-head">
+                <p class="eyebrow" data-reveal="fade-up">Process</p>
+                <h2 data-reveal="fade-up">How I Build</h2>
+            </div>
+            <div class="process-grid" id="processGrid"></div>
+        </section>
+
+        <section class="journey" id="journey">
+            <div class="section-head">
+                <p class="eyebrow" data-reveal="fade-up">Journey</p>
+                <h2 data-reveal="fade-up">My Journey</h2>
+            </div>
+            <div class="journey-content">
+                <div class="journey-card" data-reveal="fade-up">
+                    <h3>BSCS</h3>
+                    <span class="journey-school">University of Central Punjab</span>
+                    <p>Computer Science education paired with hands-on, practical software development — building real projects alongside coursework rather than studying in isolation.</p>
+                    <a class="btn btn-line btn-sm" href="education.html">View Education Details <span aria-hidden="true">→</span></a>
+                </div>
+                <div data-reveal="fade-up">
+                    <p style="color:var(--color-muted);line-height:1.8;margin-bottom:22px;max-width:52ch;">A progression from programming fundamentals to building complete, full-stack products — each step adding a layer to how I design and ship software.</p>
+                    <div class="journey-path">
+                        <span>Programming Fundamentals</span>
+                        <span>C++</span>
+                        <span>Data Structures & Algorithms</span>
+                        <span>Web Development</span>
+                        <span>React</span>
+                        <span>Backend Development</span>
+                        <span>Databases</span>
+                        <span class="is-current">Full Stack Development</span>
+                        <span>Cloud & AI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-grid">
+                <div class="contact-copy" data-reveal="fade-up">
+                    <h2>Have an idea?<br>Let's build it.</h2>
+                    <p>Whether you have a project in mind, need a web application, or simply want to discuss an idea, feel free to get in touch.</p>
+                    <a href="#contactForm" class="btn btn-primary">Start a Conversation <span aria-hidden="true">→</span></a>
+
+                    <div class="contact-links">
+                        <a href="mailto:hussnain@example.com">Email</a>
+                        <a href="https://github.com/hussnain-codex" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="https://wa.me/923214051527" target="_blank" rel="noreferrer">WhatsApp</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-reveal="fade-up">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p id="formStatus" class="status-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>Hussnain Naeem</strong>
+                <span class="footer-role">Full Stack Developer</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/hussnain-codex" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="mailto:hussnain@example.com">Email</a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span id="year"></span> Hussnain Naeem. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

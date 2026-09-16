@@ -1,0 +1,8 @@
+[
+  { "num": "01", "title": "Frontend Development", "desc": "Modern responsive interfaces using React and JavaScript." },
+  { "num": "02", "title": "Backend Development", "desc": "Scalable APIs and backend systems using Node.js and Express." },
+  { "num": "03", "title": "Full Stack Development", "desc": "Complete web applications connecting frontend, backend and database systems." },
+  { "num": "04", "title": "Database & APIs", "desc": "MongoDB, Prisma, REST APIs and structured data systems." },
+  { "num": "05", "title": "Admin Dashboards", "desc": "Powerful dashboards for managing products, employees, users and business operations." },
+  { "num": "06", "title": "AI & Automation", "desc": "AI-powered features and automation integrated into modern applications." }
+]
