@@ -58,7 +58,8 @@ export default function Contact() {
             Start a Conversation <span aria-hidden="true">→</span>
           </a>
           <div className="contact-links">
-            <a href={"mailto:" + (socials.email || "")}>Email</a>
+            <a href={"mailto:" + (socials.email || "")}>{socials.email || "Email"}</a>
+            <a href={"tel:" + (socials.phone || "")}>{socials.phoneDisplay || socials.phone || "Phone"}</a>
             <a href={socials.github || "#"} target="_blank" rel="noreferrer">
               GitHub
             </a>
