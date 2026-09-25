@@ -3,6 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
 import ParticleField from '@/components/ParticleField';
+import CustomCursor from '@/components/CustomCursor';
 
 export const metadata = {
     title: 'Hussnain Naeem — Full Stack Developer',
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
                 <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
             </head>
             <body>
+                <CustomCursor />
                 <ParticleField />
                 <a href="#main" className="skip-link">Skip to content</a>
                 <Nav />

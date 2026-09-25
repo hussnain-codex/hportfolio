@@ -34,7 +34,7 @@ export default function Work() {
 
           return (
             <article key={p.index} className={articleClass}>
-              <Reveal className="work-preview" type="fade-in">
+              <Reveal className="work-preview" type="fade-in" data-cursor="View">
                 <div className="work-preview-chrome">
                   <span></span>
                   <span></span>
@@ -81,9 +81,10 @@ export default function Work() {
             <Reveal
               as="a"
               key={p.title}
-              href={p.link || "/test/projects.html"}
+              href={p.link || "/projects"}
               type="fade-up"
               className="more-card"
+              data-cursor="View"
             >
               <h4>{p.title}</h4>
               <p>{p.desc}</p>

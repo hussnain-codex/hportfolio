@@ -26,6 +26,7 @@ export default function BackToTop() {
             id="backToTop"
             type="button"
             aria-label="Back to top"
+            data-cursor="Top"
             onClick={handleClick}
         >
             ↑

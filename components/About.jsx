@@ -8,6 +8,13 @@ export default function About() {
       </div>
       <div className="about-grid">
         <Reveal className="about-lead" type="fade-up">
+          <div className="about-avatar">
+            <img src="/images/hussnain.png" alt="Hussnain Naeem" width="72" height="72" />
+            <div>
+              <span className="about-avatar-name">Hussnain Naeem</span>
+              <span className="about-avatar-role">Full Stack Developer</span>
+            </div>
+          </div>
           <p>A Full Stack Developer building modern web applications from the database up.</p>
         </Reveal>
         <Reveal className="about-body" type="fade-up">

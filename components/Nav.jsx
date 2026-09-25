@@ -112,6 +112,7 @@ export default function Nav() {
                         className="theme-toggle"
                         type="button"
                         aria-label="Toggle dark mode"
+                        data-cursor="Theme"
                         onClick={toggleTheme}
                     >
                         {isDark ? "☀️" : "🌙"}

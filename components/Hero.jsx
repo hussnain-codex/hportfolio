@@ -69,6 +69,9 @@ export default function Hero() {
                 <Reveal type="fade-in" className="hero-visual" id="heroVisual" aria-hidden="true">
                     <div className="hero-grid"></div>
                     <div className="hero-orb"></div>
+                    <div className="hero-photo">
+                        <img src="/images/hussnain.png" alt="Hussnain Naeem" width="560" height="560" />
+                    </div>
                     <div className="hero-card hero-card-1">
                         <span className="hero-card-label">Frontend</span>
                         <span className="hero-card-tag">React and JS</span>
