@@ -139,6 +139,7 @@ export default function CustomCursor() {
 
     function handleLeaveWindow() {
       hide();
+      hasMoved = false;
     }
 
     function loop() {
