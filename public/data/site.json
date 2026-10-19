@@ -30,6 +30,7 @@
       { "label": "Backend Development" },
       { "label": "Databases" },
       { "label": "Full Stack Development", "current": true },
+      { "label": "Python" },
       { "label": "Cloud & AI" }
     ]
   }

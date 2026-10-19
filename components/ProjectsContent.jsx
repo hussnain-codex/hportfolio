@@ -9,6 +9,30 @@ const PROJECTS = [
     tags: ["React", "Node.js", "MongoDB", "Authentication", "Cloudinary"],
   },
   {
+    title: "Multi-Provider CLI Chatbot",
+    description:
+      "Built a command-line chatbot in Python that connects to multiple LLM providers through a single interface, making it easy to switch between models.",
+    tags: ["Python", "LLM APIs", "CLI"],
+  },
+  {
+    title: "Smart Data Extractor",
+    description:
+      "Developed a Python tool that uses LLMs to extract structured data from both text and images, turning unstructured inputs into clean, usable fields.",
+    tags: ["Python", "LLMs", "Vision", "Structured Output"],
+  },
+  {
+    title: "Chat with Your PDFs",
+    description:
+      "Built a basic retrieval-augmented generation (RAG) app in Python that splits PDFs into chunks, embeds them, and answers questions using the most relevant passages.",
+    tags: ["Python", "RAG", "Embeddings", "Vector Search"],
+  },
+  {
+    title: "RAG You Can Trust",
+    description:
+      "Extended a RAG pipeline with evaluation and guardrails to measure answer quality, check that responses are grounded in the source documents, and catch unreliable answers.",
+    tags: ["Python", "RAG", "Evaluation", "Guardrails"],
+  },
+  {
     title: "Personal Portfolio Website",
     description:
       "Designed and developed a responsive personal portfolio website using HTML and CSS to showcase my skills, education, and projects. Features a modern design with smooth animations and is fully responsive across all devices.",
@@ -67,6 +91,7 @@ const PROJECTS = [
 const SKILLS = [
   { label: "Front-End Development", detail: "HTML, CSS, JavaScript, Responsive Design" },
   { label: "Back-End Development", detail: "C++, OOP, Data Structures" },
+  { label: "Python & AI", detail: "Python, LLM APIs, RAG, Evaluation & Guardrails" },
   { label: "Problem Solving", detail: "Algorithms, Data Management, System Design" },
   { label: "Tools & Technologies", detail: "Git, Visual Studio, Code Editors" },
 ];

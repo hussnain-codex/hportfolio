@@ -42,6 +42,32 @@ export default function EducationContent() {
             </tr>
           </tbody>
         </table>
+
+        <div className="projects-skills">
+          <h3>Python &amp; AI Experience</h3>
+          <p>
+            Hands-on Python training focused on building applications with large
+            language models, completed through a series of practical projects.
+          </p>
+          <ul>
+            <li>
+              <strong>Multi-Provider CLI Chatbot:</strong> a Python command-line
+              chatbot working with multiple LLM providers through one interface.
+            </li>
+            <li>
+              <strong>Smart Data Extractor:</strong> extracting structured data
+              from text and images using LLMs.
+            </li>
+            <li>
+              <strong>Chat with Your PDFs:</strong> a basic retrieval-augmented
+              generation (RAG) app for asking questions about PDF documents.
+            </li>
+            <li>
+              <strong>RAG You Can Trust:</strong> adding evaluation and
+              guardrails to a RAG pipeline to measure and improve answer quality.
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
   );

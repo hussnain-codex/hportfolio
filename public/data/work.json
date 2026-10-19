@@ -21,6 +21,10 @@
   ],
   "more": [
     { "title": "HR Management Portal", "desc": "An employee management platform covering attendance, leave requests, holidays and admin workflows.", "tags": ["React", "Node.js", "MongoDB"], "link": "/projects" },
+    { "title": "Multi-Provider CLI Chatbot", "desc": "A Python command-line chatbot that works with multiple LLM providers through one interface.", "tags": ["Python", "LLM APIs", "CLI"], "link": "/projects" },
+    { "title": "Smart Data Extractor", "desc": "A Python tool that uses LLMs to pull structured data out of both text and images.", "tags": ["Python", "LLMs", "Vision"], "link": "/projects" },
+    { "title": "Chat with Your PDFs", "desc": "A basic RAG app in Python for asking questions about PDF documents and getting answers grounded in them.", "tags": ["Python", "RAG", "Embeddings"], "link": "/projects" },
+    { "title": "RAG You Can Trust", "desc": "A RAG pipeline extended with evaluation and guardrails to measure answer quality and catch unreliable responses.", "tags": ["Python", "RAG", "Evaluation"], "link": "/projects" },
     { "title": "Currency Converter", "desc": "A responsive currency converter with fast, accurate conversions and a clean interface.", "tags": ["React", "JavaScript"], "link": "/projects" },
     { "title": "Interactive JavaScript Demo", "desc": "A dynamic page featuring task management, theme switching and real-time updates.", "tags": ["JavaScript", "DOM"], "link": "/demos/index.html" },
     { "title": "Quiz App", "desc": "An interactive quiz app with multiple-choice questions, instant scoring and a polished interface.", "tags": ["JavaScript", "UI"], "link": "/projects" },
